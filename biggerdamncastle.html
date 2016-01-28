@@ -1,0 +1,172 @@
+<head>
+    <title>Build a Bigger Damn Castle at Brandeis - biggerdamncastle.org</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<head>
+    <title>Build a Bigger Damn Castle at Brandeis - biggerdamncastle.org</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:url"         content="http://biggerdamncastle.org" />
+    <meta property="og:title"       content="Build A Bigger Damn Castle" />
+    <meta property="og:description" content="The only reason to tear down Usen Castle. Sign the petition now!" />
+    <meta property="og:image"       content="http://biggerdamncastle.org/courtyard.jpg" />
+</head>
+
+<body class="landing">
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '942077059215650',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="page-wrapper">
+
+    <section id="banner">
+        <div class="inner">
+            <p>The only reason to tear down most of Usen Castle</p>
+            <h2>Build a bigger damn castle</h2>
+            <ul class="actions">
+                <li><a href="#sign" class="button special scrolly">Sign the petition</a></li>
+            </ul>
+        </div>
+        <a href="#learn" class="more scrolly">Learn More</a>
+    </section>
+
+    <section id="learn" class="wrapper style1 special">
+        <div class="inner">
+            <header class="major">
+                <h2>Brandeis University's oldest, most iconic building<br />meets the wrecking ball</h2>
+                <p>Interim President Lisa Lynch <a href="http://www.brandeis.edu/castle-project/about.html">announced</a>
+                    on 25 January 2016 that most of Usen Castle&mdash;Towers C, D, E, and Schwartz&mdash;will be destroyed
+                    to construct new student housing.</p>
+                <p>We, the undersigned, feel that the only acceptable reason to destroy part of the Castle <em>is to build a
+                    bigger damn castle.</em></p>
+                <p>We expect the University to maintain the Castle quad's whimsical, medieval
+                    character in any new construction, consistent with its 1979 placement on the
+                    <a href="http://mhc-macris.net/Details.aspx?MhcId=WLT.273">National Register of Historic Places</a>.</p>
+
+                <ul class="actions">
+                    <li><a href="#sign" class="button special scrolly">Sign the petition</a></li>
+                    <li><a href="#history" class="button scrolly">More history</a></li>
+                </ul>
+            </header>
+        </div>
+    </section>
+
+    <section id="sign" class="wrapper alt style2">
+        <section class="spotlight">
+            <div class="image"><img src="images/tower1977.jpg" alt="" /></div><div class="content">
+            <h2>Sign now</h2>
+            {{#unless currentUser}}
+                <p><strong>Sign in with Facebook to add your signature.</strong> This petition needs real people with
+                    real names; a Facebook account helps us ensure that.</p>
+                <p>(We only store your most basic profile information to list it on the petition. Truthfully. To its innermost parts.)</p>
+            {{/unless}}
+            {{> loginButtons}}
+        </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><img src="images/castle.jpg" alt="" /></div><div class="content">
+            {{#if total}}
+                <h2>{{total}} supporters</h2>
+                <ul>
+                    {{#each signatures}}
+                        {{> signature}}
+                    {{/each}}
+                </ul>
+            {{else}}
+                <h2>No supporters yet</h2>
+                <p>Be the first to sign!</p>
+            {{/if}}
+        </div>
+        </section>
+    </section>
+
+    <section id="history" class="wrapper style3 special">
+        <div class="inner">
+            <header class="major">
+                <h2>Historical significance of Usen Castle</h2>
+                <h3>Massachusetts Historical Commission, 1977</h3>
+
+                <p>"The Usen Castle is a most unusual and historically significant building. It was built by
+                    Dr. John Hall Smith, founder of Middlesex Medical School, in 1928. In 1945 the school had
+                    been forced out of existence by the simple fact that few of its graduates were granted
+                    licenses to practice. Facing the immediate prospect of closing, school officials decided
+                    to pass its property and charter on to a group who in 1948 founded Brandeis University. The
+                    structure is one of two buildings on the Brandeis campus surviving from the former college.
+                    Employing local labor, and using second-hand windows and mechanical fixtures, bits of mosaic
+                    and painted decoration, Dr. Smith constructed a building inspired by a sketch of Ireland's
+                    Cavendish Castle. The fieldstone that was used for the walls had divided the site of the
+                    campus into narrow strips where local farmers grazed their cattle in colonial times. Dr.
+                    Smith built his Castle atop Boston Rock, one of the highest elevation points on the campus,
+                    and the entire Boston area as well. It was from this point that Colonel William Bradford
+                    first surveyed Boston in the mid-17th century."</p>
+
+                <p>"In the early years of Brandeis University, the Castle housed administrative and dining
+                    services as well as student dormitory space. In the 1950s, its 50,000 square feet were
+                    remodeled into ninety single, double and larger living units to house 142 students.
+                    Although the Castle had been deteriorating inside and out in recent years, it remained the
+                    overwhelming choice of the 2,100 students who reside on campus each year. Probably chief
+                    among the Castle's many attractions is its medieval air, an atmosphere enhanced by stone
+                    archways, sharply defined battlements, turrets, conical towers and spiral staircases. On
+                    this modern campus, it represents stone surrounded by glass, age by youth, tradition by
+                    innovation and change. The Castle's recent restoration assures the preservation of a
+                    symbolic historical structure and the building's continued use as a student residence for
+                    many decades to come."</p>
+
+                <p><em>&mdash;Joel E. Grushkin, Student of Architectural History and Director of
+                    Waltham Historic Survey Procedures</em></p>
+            </header>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="javascript:void(0);" class="icon fa-facebook fa-2x share-facebook"><span class="label">Facebook</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>Built by Jonathan Abbett '02</li>
+            <li>Design by <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>Powered by <a href="http://meteor.com">Meteor.js</a></li>
+        </ul>
+    </footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/jquery.scrollex.min.js"></script>
+<script src="js/jquery.scrolly.min.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+<template name="loggedIn">
+    <div class="signature-added">
+        <p><strong>Thanks, {{currentUser.services.facebook.first_name}}!</strong> You're listed as a supporter.</p>
+        <p>Please <a href="javascript:void(0);" class="share-facebook">share this petition with others</a> on Facebook.</p>
+    </div>
+</template>
+
+<template name="signature">
+    <li>
+        <strong>{{name}}</strong><br />
+        Signed {{dateSigned}}
+    </li>
+</template>
