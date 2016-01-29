@@ -102,10 +102,10 @@
 
     });
 
-    $(".share-facebook").click(function() {
+    $(document).on("click", ".share-facebook", function() {
         FB.ui({
             method: 'share',
-            href:   'http://biggerdamncastle.org',
+            href:   'http://biggerdamncastle.org'
         }, function(response) {
         });
     });
