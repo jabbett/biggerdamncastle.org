@@ -1,7 +1,3 @@
-BrowserPolicy.content.allowFontDataUrl();
-BrowserPolicy.content.allowOriginForAll("https://connect.facebook.net/");
-BrowserPolicy.content.allowOriginForAll("https://code.jquery.com/");
-
 // Deny all client-side updates on the Signatures collection
 Signatures.deny({
     insert: function() {

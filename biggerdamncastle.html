@@ -2,12 +2,8 @@
     <title>Build a Bigger Damn Castle at Brandeis - biggerdamncastle.org</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-
-<head>
-    <title>Build a Bigger Damn Castle at Brandeis - biggerdamncastle.org</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,800,800italic" />
 
     <meta property="og:url"         content="http://biggerdamncastle.org" />
     <meta property="og:title"       content="Build A Bigger Damn Castle" />
@@ -51,7 +47,7 @@
     <section id="learn" class="wrapper style1 special">
         <div class="inner">
             <header class="major">
-                <h2>Brandeis University's oldest, most iconic building<br />meets the wrecking ball</h2>
+                <h2>Brandeis University's oldest, most iconic building meets the wrecking ball</h2>
                 <p>Interim President Lisa Lynch <a href="http://www.brandeis.edu/castle-project/about.html">announced</a>
                     on 25 January 2016 that most of Usen Castle&mdash;Towers C, D, E, and Schwartz&mdash;will be destroyed
                     to construct new student housing.</p>
@@ -79,23 +75,26 @@
                 <p>(We only store your most basic profile information to list it on the petition. Truthfully. To its innermost parts.)</p>
             {{/unless}}
             {{> loginButtons}}
-        </div>
+            </div>
         </section>
-        <section class="spotlight">
-            <div class="image"><img src="images/castle.jpg" alt="" /></div><div class="content">
-            {{#if total}}
-                <h2>{{total}} supporters</h2>
-                <ul>
-                    {{#each signatures}}
-                        {{> signature}}
-                    {{/each}}
-                </ul>
-            {{else}}
-                <h2>No supporters yet</h2>
-                <p>Be the first to sign!</p>
-            {{/if}}
+    </section>
+
+    <section class="wrapper style5">
+        <div class="inner">
+            <section>
+                {{#if total}}
+                    <h2 style="text-align:center;">{{total}} supporters</h2>
+                    <ul class="features">
+                        {{#each signatures}}
+                            {{> signature}}
+                        {{/each}}
+                    </ul>
+                {{else}}
+                    <h2 style="text-align:center;">No supporters yet</h2>
+                    <p style="text-align:center;">Be the first to sign!</p>
+                {{/if}}
+            </section>
         </div>
-        </section>
     </section>
 
     <section id="history" class="wrapper style3 special">
@@ -141,9 +140,7 @@
             <li><a href="javascript:void(0);" class="icon fa-facebook fa-2x share-facebook"><span class="label">Facebook</span></a></li>
         </ul>
         <ul class="copyright">
-            <li>Built by Jonathan Abbett '02</li>
-            <li>Design by <a href="http://html5up.net">HTML5 UP</a></li>
-            <li>Powered by <a href="http://meteor.com">Meteor.js</a></li>
+            <li>Built by Jonathan Abbett '02</li><li>Inspired by Kevin Leete '02</li><li>Design by <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="http://meteor.com">Meteor.js</a></li>
         </ul>
     </footer>
 
