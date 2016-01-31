@@ -88,6 +88,17 @@
                     <ul class="features">
                         {{#each signatures}}
                             {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
+                            {{> signature}}
                         {{/each}}
                     </ul>
                 {{else}}
@@ -164,7 +175,7 @@
 
 <template name="signature">
     <li>
-        <strong>{{name}}</strong><br />
-        Signed {{dateSigned}}
+        <strong>{{name}}</strong>
+        <div class="meta">Signed {{dateSigned}}</div>
     </li>
 </template>

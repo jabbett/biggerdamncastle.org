@@ -764,11 +764,19 @@ button:disabled,
 }
 
 .features li {
-    padding: 2em;
+    padding: 1.5em;
     display: block;
     position: relative;
     text-align: center;
-    width: 25%;
+    width: 20%;
+    line-height:1.2;
+    font-size:11pt;
+}
+
+.features li .meta {
+    font-size:9pt;
+    color:#666;
+    margin-top:3pt;
 }
 
 .features li:nth-child(3n + 1) {
@@ -839,7 +847,7 @@ button:disabled,
 @media screen and (max-width: 980px) {
 
     .features li {
-        padding: 3em 2em 1em 2em ;
+        padding:1em;
         text-align: center;
     }
 
@@ -855,9 +863,9 @@ button:disabled,
 @media screen and (max-width: 736px) {
 
     .features li {
-        padding: 3em 0 1em 0 ;
+        /*padding: 3em 0 1em 0 ;
         background-color: transparent !important;
-        border-top: solid 2px #fff;
+        border-top: solid 2px #fff;*/
         width: 100%;
     }
 
@@ -1485,14 +1493,6 @@ button:disabled,
 .wrapper.style5 button:active,
 .wrapper.style5 .button:active {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width: 736px) {
-
-    .wrapper.style5 .features li {
-        border-top-color: #dfdfdf;
-    }
-
 }
 
 @media screen and (max-width: 980px) {
@@ -2133,6 +2133,7 @@ body.is-mobile.landing #footer {
     border: 1px solid white;
     border-radius: 0.5rem;
     line-height: 1.4;
+    margin-bottom: 2em;
 }
 
 #login-buttons a {
