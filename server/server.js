@@ -13,11 +13,14 @@ Signatures.deny({
 
 // Deny all client-side updates to user documents
 Meteor.users.deny({
-    update: function() { return true; }
+    update: function() {
+        return true;
+    }
 });
 
 Meteor.publish("signatures", function() {
-    return Signatures.find();
+    // Publish signature data but without URL or e-mail address
+    return Signatures.find({}, { fields: { facebook_profile_url: 0, email: 0 } });
 });
 
 Meteor.publish("currentUserData", function() {
