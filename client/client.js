@@ -66,4 +66,11 @@ Meteor.startup(function() {
             offset: $header.outerHeight()
         });
 
+    $(".btn-privacy").click(function() {
+        $("#privacy").show();
+        $('html, body').animate({
+            scrollTop: $("#privacy").offset().top
+        }, 500);
+    });
+
 });
